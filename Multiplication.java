@@ -1,17 +1,18 @@
+package simplecalculator;
+
 import java.util.Scanner;
-public class Multiplication {
-	public satic void main (String[] args) {
-		int a,b,mul;
 
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the two numbers");
-		
-		a = sc.nextInt();
-		b = sc.nextInt();
-
-		mul = a * b;
-		System.out.println("The multiplication of" +a +"and"+ b+"is" + mul);
-
-		sc.close();
-	}
+public class Multiplication extends Calculation{
+     void result(){
+        Scanner product = new Scanner(System.in);
+        
+        System.out.print("1st Number: ");
+        int x = product.nextInt();
+        
+        System.out.print("2nd Number: ");
+        int y = product.nextInt();
+        
+        int multiply = x * y;
+        System.out.println("Result is " + multiply);
+    }
 }
